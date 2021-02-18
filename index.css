@@ -1,0 +1,31 @@
+@media only screen and (max-width: 991px) {
+    /* .navbar {
+        display: flex;
+        justify-content: space-between;
+    } */
+
+
+    /* .navbar-brand {
+        margin-right: 830px;
+    } */
+
+    .my-form {
+        margin-left: 20%;;
+    }
+
+    .navbar-brand {
+        margin-right: 35%;
+    }
+
+    .gone-button {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 991px) {
+    
+}
+
+
+
+
