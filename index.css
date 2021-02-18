@@ -58,10 +58,10 @@ font-size: 25px;;
 .navbar2 {
     display:flex;
     list-style-type:none;
-    margin: 5%;
+    margin: 1px; 
 }
 li {
-padding:2%
+padding: 50px;
 }
 
 /* Dropdown Button */
