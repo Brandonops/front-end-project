@@ -14,55 +14,41 @@
 <body style="background-color: #1f2833;">
     <header class="row">
         <div class="dropdownbox1 col-4 d-flex justify-content-around">
-            <div class="navbar">
+            <div class="navbar navbar-expand-lg navbar-collapse">
                 <div class="dropdown">
-                    <button class="dropbtn">
+                    <button class="dropbtn navbar-toggler" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                         <div class="dropdownbox "></div>
                         <div class="dropdownbox "></div>
                         <div class="dropdownbox "></div>
                         <i class="fa fa-caret-down"></i>
                     </button>
-                    <div class="dropdown-content">
-                        <a href="#">Home</a>
+                    <div class="dropdown-content collapse" id="navbarToggler">
+                        <a href="#">Top Tracks</a>
                         <a href="#">Artist</a>
                         <a href="#">Album</a>
-                        <a href="#">Tracks</a>
+
                     </div>
                 </div>
             </div>
-            <div>Home</div>
-            <div>Artist</div>
-            <div>Album</div>
-            <Div>Tracks</Div>
-        </div>
-        <div class="title col-4 d-flex justify-content-center"> Beta Music
-        </div>
-        <div class="col-4  d-flex justify-content-end background-color:">
-            <input type="text">
-            <button class="searchButton">search</button>
-        </div>
-    </header>
-
-
-    <br>
-    <br>
-    <br>
-    <div>
-    <H1 class="hits">Top 10 Hits</H1>
-    </div>
-    
-    
-    <div>
-        <div class="card" style="width: 18rem;margin: 100px;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="navbar2" id="navbar2">
+                <ul class="navbar2";>
+                    <li><a href="#">Tracks</a></li>
+                    <li>Album</li>
+                    <li>Artist</li>
+                </ul>
             </div>
         </div>
-    </div>
+        <div class="title col-4 d-flex justify-content-center "> Alpha   Music
+        </div>
+        <div class="col-4  d-flex justify-content-end background-color:">
+            <form action="" class="search-bar">
+                <input type="search" name="search" pattern=".*\S.*" required>
+                <button class="search-btn" type="submit">
+                    <span>Search</span>
+                </button>
+            </form>
+        </div>
+    </header>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -70,5 +56,4 @@
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
