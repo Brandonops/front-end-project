@@ -3,6 +3,96 @@ html, body {
     overflow-x: hidden;
 }
 
+body {
+    background-color: rgb(2,2,11);
+	background: rgb(2,2,11);
+	background: rgb(2,2,11);
+	background: rgb(2,2,11);
+	background: linear-gradient(0deg, rgba(2,2,11,1) 30%, rgba(69,162,158,1) 100%);
+	background-repeat: no-repeat;
+}
+
+.big-board {
+    margin: 15px 15px 15px 15px;
+	background-color: transparent;
+	overflow-y: auto;
+}
+
+
+.jumbotron{
+    padding: 30px;
+	background-color: rgb(31, 40, 51, 0.2);
+	overflow-y: auto;
+    background-color: rgb(2,2,11);
+	background: rgb(2,2,11);
+	background: rgb(2,2,11);
+	background: rgb(2,2,11);
+	background: linear-gradient(0deg, rgba(2,2,11,1) 10%, rgba(69,162,158,1) 100%);
+	background-repeat: no-repeat;
+}
+
+
+.song-name {
+    margin-top: 10%;
+    margin-left: 1%;                    /*margin bottom 20px for navbar */
+    color: #66FCF1;
+    font-size: 4rem;
+}  
+
+.info {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+
+
+.artist-name {
+    margin-left: 1.5%;
+    color: #66FCF1;
+    font-size: 1.3rem;
+}
+
+.lyric-title {
+    color: white;
+}
+
+.lyrics-section {
+    float: left;
+    width: 40%;
+    height: 100%;
+    margin-left: 60px;
+    text-align: center;
+}
+
+.music-container {
+    float: right;
+    width: 50%;
+    margin-right: 130px;
+}
+
+.video-title {
+    text-align: center;
+    color: white;
+}
+
+.video {
+    margin-left: 300px;
+}
+
+/* .lyric-title {
+    text-align: center;
+} */
+
+
+
+
+
+
+
+
+
+/* Tylers Navbar */
 .title{
     font-size: 18px;
     text-decoration:underline;
@@ -15,62 +105,93 @@ html, body {
 @media (min-width:1000px){
     .title{font-size: 40px;}
 }
+
+
 .row {
-    background-color:#1f2833;
+    /* background-color:#1f2833; */
 	background-color: rgb(31, 40, 51, 0.5);
     justify-content: space-around;
     align-items: center;
     font-size: 130%;
-    color: #66fcf1
+    padding-top: 20px;
+    margin-bottom: 20px;
 }
+
+
+
+
 .albums {
     display:flex;
     justify-content: flex-start;
 }
+
+
+
 .hits{
     display:flex;
     justify-content: center;
     font-size: 40px;
-    color: #66FCF1;
+    color: #66fcf1;
 }
+
+
+
 .dropdownbox1{
 font-size: 25px;;
 }
+
+
+
 .dropdownbox {
     width: 35px;
     height: 5px;
     background-color:#66fcf1;
     margin: 6px 0;
   }
+
   .navbar{
       display: none;
   }
 .navbar2 {
     display:flex;
     list-style-type:none;
-    margin: 1px;
+    margin: 1px; 
+}
+li {
+padding: 50px;
 }
 
-Dropdown Button */
+/* Dropdown Button */
 .dropbtn {
-    background-color: #1F2833;
+    background-color: #1f2833;
     color:#66fcf1;
     font-size: 25px;
     border: none;
   }
+
+
+  
   /* The container <div> - needed to position the dropdown content */
   .dropdown {
     position: relative;
     display: inline-block;
   }
+
+
+
+  
   /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
     position: absolute;
-    background-color: #1F2833;
+    background-color: #1f2833;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
+
+
+
+  
   /* Links inside the dropdown */
   .dropdown-content a {
     color:#66fcf1;
@@ -78,10 +199,18 @@ Dropdown Button */
     text-decoration: none;
     display: block;
   }
+
+
 @media only screen and (max-width:875px){
     #navbar2{display:none;}
     .navbar{display:block;}
 }
+
+
+
+
+
+
   * {
     border: 0;
     box-sizing: border-box;
@@ -91,7 +220,7 @@ Dropdown Button */
 :root {
     font-size: calc(16px + (24 - 16)*(100vw - 320px)/(1920 - 320));
 }
- button, input {
+body, button, input {
     font: 1em Hind, sans-serif;
     line-height: 1.5em;
 }
@@ -101,12 +230,13 @@ body, input {
 .search-bar {
     display: flex;
 }
-/* body {
-    /* background: #F1F1F1;
-    height: 100vh; */
+body {
+    background: #F1F1F1;
+    height: 100vh;
+}
 .search-bar input,
-.search-btn,
-.search-btn:before,
+.search-btn, 
+.search-btn:before, 
 .search-btn:after {
     transition: all 0.25s ease-out;
 }
@@ -137,7 +267,7 @@ body, input {
 .search-bar input {
     background: transparent;
     border-radius: 1.5em;
-    box-shadow: 0 0 0 0.4em #66FCF1 inset;
+    box-shadow: 0 0 0 0.4em #66fcf1 inset;
     padding: 0.75em;
     transform: translate(0.5em,0.5em) scale(0.5);
     transform-origin: 100% 0;
@@ -156,14 +286,14 @@ body, input {
     transform: scale(1);
 }
 .search-btn {
-    background: #66FCF1;
+    background: #66fcf1;
     border-radius: 0 0.75em 0.75em 0 / 0 1.5em 1.5em 0;
     padding: 0.75em;
     position: relative;
     transform: translate(0.25em,.25em) rotate(45deg) scale(0.25,0.125);
     transform-origin: 0 50%;
 }
-.search-btn:before,
+.search-btn:before, 
 .search-btn:after {
     content: "";
     display: block;
@@ -182,7 +312,7 @@ body, input {
     background: #C5C6C7;
     border-radius: 0 0.25em 0.25em 0;
     top: 55%;
-    left: 10%;
+    left: 10%; 
     width: 0.75em;
     height: 0.25em;
     transform: translate(1.0em,0) rotate(50deg);
@@ -201,9 +331,9 @@ body, input {
     border-radius: 0 0.375em 0.375em 0;
     transform: scale(1);
 }
-.search-bar input:focus + .search-btn:before,
+.search-bar input:focus + .search-btn:before, 
 .search-bar input:focus + .search-btn:after,
-.search-bar input:valid + .search-btn:before,
+.search-bar input:valid + .search-btn:before, 
 .search-bar input:valid + .search-btn:after {
     opacity: 1;
 }
@@ -221,7 +351,13 @@ body, input {
         color: #66FCF1;
     }
     body {
-        background: #171717;
+        /* background: #171717; */
+        background-color: rgb(2,2,11);
+	background: rgb(2,2,11);
+	background: rgb(2,2,11);
+	background: rgb(2,2,11);
+	background: linear-gradient(0deg, rgba(2,2,11,1) 30%, rgba(69,162,158,1) 100%);
+	background-repeat: no-repeat;
     }
     .search-bar input {
         box-shadow: 0 0 0 0.4em #66FCF1 inset;
@@ -235,52 +371,3 @@ body, input {
         background: #66FCF1;
     }
 }
-
-body {
-	background-color: rgb(2,2,11);
-	background: rgb(2,2,11);
-	background: rgb(2,2,11);
-	background: rgb(130, 130, 187);
-	background: linear-gradient(0deg, rgba(2,2,11,1) 60%, rgba(69,162,158,1) 100%);
-	background-repeat: no-repeat;
-}
-
-
-/* content */
-.content {
-	margin: 15px 15px 15px 15px;
-	background-color: transparent;
-	overflow-y: auto;
-}
-
-.jumbotron {
-	padding: 30px;
-	background-color: rgb(31, 40, 51, 0.2);
-	overflow-y: auto;
-    color:#66fcf1;
-}
-.jumbotron img {
-	margin-left: 40px;
-	margin-right: 100px;
-	z-index: 1;
-}
-#table-chart {
-    display: flex;
-    justify-content: center;
-    color: #66FCF1;
-}
-
-.table {
-    width: 80%;
-    border-style: none;
-    color: #66FCF1;
-
-}
-td, th {
-    border-style: hidden!important;
-}
-
-th {
-    font-size: 25px;
-}
-
