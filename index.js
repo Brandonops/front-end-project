@@ -13,8 +13,6 @@ $(document).ready(function () {
         })
 
 
-
-
 })
 
  async function renderChart(chartArray) {
