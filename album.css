@@ -20,6 +20,20 @@
 .cardClass .card{
     background-color: transparent;
 }
+.content {
+    text-align: center;
+	margin: 15px 15px 15px 15px;
+	background-color: transparent;
+	overflow-y: auto;
+}
+
+.jumbotron {
+	padding: 30px;
+	background-color: rgb(31, 40, 51, 0.2);
+	overflow-y: auto;
+    color:#66fcf1;
+}
+
 .title{
     font-size: 18px;
     text-decoration:underline;
