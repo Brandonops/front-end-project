@@ -1,7 +1,7 @@
 .albumTitle{
     display: flex;
     justify-content: center;
-    color:#05386b
+    color: #66fcf1;
 }
 
 .cardRow{
@@ -13,8 +13,8 @@
 }
 
 .cardClass{
-    background-color:#222629 ;
-    color: #EDF5E1;
+    background-color:rgba(69,162,158,1);
+    color: black;
     margin:10px
 }
 .cardClass .card{
@@ -35,8 +35,8 @@
 
 
 .row {
-    background-color:#5cdb95;
-    color:#05386b ;
+    background-color:rgba(69,162,158,1 100%);
+    color:#66fcf1;
     justify-content: space-around;
     align-items: center;
     font-size: 130%;
@@ -56,7 +56,7 @@
     display:flex;
     justify-content: center;
     font-size: 40px;
-    color: #05386b;
+    color: #66fcf1;;
 }
 
 
@@ -70,7 +70,7 @@ font-size: 25px;;
 .dropdownbox {
     width: 35px;
     height: 5px;
-    background-color:#05386b;
+    background-color:#66fcf1;;
     margin: 6px 0;
   }
 
@@ -88,8 +88,8 @@ padding: 50px;
 
 /* Dropdown Button */
 .dropbtn {
-    background-color: #5cdb95;
-    color:#05386b;
+    background-color: #66fcf1;
+    color:#66fcf1;
     font-size: 25px;
     border: none;
   }
@@ -108,7 +108,7 @@ padding: 50px;
   /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
     position: absolute;
-    background-color: #5cdb95;
+    background-color: #66fcf1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -119,7 +119,7 @@ padding: 50px;
   
   /* Links inside the dropdown */
   .dropdown-content a {
-    color:#05386b;
+    color:#66fcf1;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -156,8 +156,12 @@ body, input {
     display: flex;
 }
 body {
-    background: #F1F1F1;
-    height: 100vh;
+    background-color: rgb(2,2,11);
+	background: rgb(2,2,11);
+	background: rgb(2,2,11);
+	background: rgb(130, 130, 187);
+	background: linear-gradient(0deg, rgba(2,2,11,1) 60%, rgba(69,162,158,1) 100%);
+	background-repeat: no-repeat;
 }
 .search-bar input,
 .search-btn, 
@@ -192,7 +196,7 @@ body {
 .search-bar input {
     background: transparent;
     border-radius: 1.5em;
-    box-shadow: 0 0 0 0.4em #05386b inset;
+    box-shadow: 0 0 0 0.4em #66fcf1 inset;
     padding: 0.75em;
     transform: translate(0.5em,0.5em) scale(0.5);
     transform-origin: 100% 0;
@@ -211,7 +215,7 @@ body {
     transform: scale(1);
 }
 .search-btn {
-    background: #05386b;
+    background: #66fcf1;
     border-radius: 0 0.75em 0.75em 0 / 0 1.5em 1.5em 0;
     padding: 0.75em;
     position: relative;
@@ -252,7 +256,7 @@ body {
 /* Active state */
 .search-bar input:focus + .search-btn,
 .search-bar input:valid + .search-btn {
-    background: #45A29E;
+    background: #66fcf1;
     border-radius: 0 0.375em 0.375em 0;
     transform: scale(1);
 }
@@ -265,7 +269,7 @@ body {
 .search-bar input:focus + .search-btn:hover,
 .search-bar input:valid + .search-btn:hover,
 .search-bar input:valid:not(:focus) + .search-btn:focus {
-    background: #05386b;
+    background: #66fcf1;
 }
 .search-bar input:focus + .search-btn:active,
 .search-bar input:valid + .search-btn:active {
@@ -273,13 +277,13 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
     body, input {
-        color: #05386b;
+        color: #66fcf1;
     }
     body {
         background: #171717;
     }
     .search-bar input {
-        box-shadow: 0 0 0 0.4em #05386b inset;
+        box-shadow: 0 0 0 0.4em #66fcf1 inset;
     }
     .search-bar input:focus,
     .search-bar input:valid {
@@ -287,6 +291,6 @@ body {
         box-shadow: 0 0 0 0.1em #3D3D3D inset;
     }
     .search-btn {
-        background: #05386b;
+        background: #66fcf1;
     }
 }
