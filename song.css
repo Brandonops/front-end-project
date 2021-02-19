@@ -35,17 +35,25 @@ body {
 .song-name {
     margin-top: 10%;
     margin-left: 1%;                    /*margin bottom 20px for navbar */
-    color: white;
+    color: #66FCF1;
+    font-size: 4rem;
 }  
 
 .info {
     width: 100%;
     text-align: center;
+    position: relative;
+    bottom: 100px;
 }
 
 
 .artist-name {
     margin-left: 1.5%;
+    color: #66FCF1;
+    font-size: 1.3rem;
+}
+
+.lyric-title {
     color: white;
 }
 
@@ -65,6 +73,7 @@ body {
 
 .video-title {
     text-align: center;
+    color: white;
 }
 
 .video {
@@ -99,11 +108,13 @@ body {
 
 
 .row {
-    background-color:#1f2833;
+    /* background-color:#1f2833; */
 	background-color: rgb(31, 40, 51, 0.5);
     justify-content: space-around;
     align-items: center;
     font-size: 130%;
+    padding-top: 20px;
+    margin-bottom: 20px;
 }
 
 
