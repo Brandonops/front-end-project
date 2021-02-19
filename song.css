@@ -1,16 +1,23 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
-}
-
-body {
     background-color: rgb(2,2,11);
 	background: rgb(2,2,11);
 	background: rgb(2,2,11);
 	background: rgb(2,2,11);
 	background: linear-gradient(0deg, rgba(2,2,11,1) 30%, rgba(69,162,158,1) 100%);
 	background-repeat: no-repeat;
+    
 }
+
+/* body {
+    background-color: rgb(2,2,11);
+	background: rgb(2,2,11);
+	background: rgb(2,2,11);
+	background: rgb(2,2,11);
+	background: linear-gradient(0deg, rgba(2,2,11,1) 30%, rgba(69,162,158,1) 100%);
+	background-repeat: no-repeat;
+} */
 
 .big-board {
     margin: 15px 15px 15px 15px;

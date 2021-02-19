@@ -286,3 +286,14 @@ th {
     font-size: 25px;
 }
 
+.bioContainer {
+    display: flex;
+    justify-content: row;
+    margin: 100px;
+}
+
+
+#summarybox p {
+    width:70%;
+    line-height: 2em;
+}
