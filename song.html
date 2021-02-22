@@ -53,10 +53,10 @@
 
     <!-- JumboTron with Name and Artist -->
     <section class="big-board">
-        <div class="jumbotron jumbotron-fluid d-flex ml-10">
+        <div class="jumbotron jumbotron-fluid d-flex ml-10 id=">
             <div class="info">
-                <h1 class="display-4 song-name">Drivers License</h1>
-                <small class="artist-name">By: Olivia Rodrigo</small>
+                <h1 class="display-4 song-name" id="songTitle">Drivers License</h1>
+                <small class="artist-name" id="artist">By: Olivia Rodrigo</small>
             </div>
         </div>
     </section>
@@ -64,7 +64,7 @@
     <!-- Lyrics Section -->
     <h3 class="lyric-title d-flex justify-content-center">Lyrics</h3>
     <div class="d-flex justify-content-sm-center float-md-left lyrics-section">
-        <p class="lyrics mt-3">I got my driver's license last week
+        <p class="lyrics mt-3" id="lyrics">I got my driver's license last week
             Just like we always talked about
             'Cause you were so excited for me
             To finally drive up to your house
@@ -140,9 +140,10 @@
         </table>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+    <script  src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
