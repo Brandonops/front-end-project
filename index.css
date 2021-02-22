@@ -22,6 +22,7 @@ html, body {
     justify-content: space-around;
     align-items: center;
     font-size: 130%;
+    color: #66fcf1
 }
 .albums {
     display:flex;
@@ -240,7 +241,7 @@ body {
 	background-color: rgb(2,2,11);
 	background: rgb(2,2,11);
 	background: rgb(2,2,11);
-	background: rgb(2,2,11);
+	background: rgb(130, 130, 187);
 	background: linear-gradient(0deg, rgba(2,2,11,1) 60%, rgba(69,162,158,1) 100%);
 	background-repeat: no-repeat;
 }
