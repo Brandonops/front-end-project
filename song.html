@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="song.css">
-    <title>Document</title>
+    <title>Lyrics</title>
 </head>
 
 <body>
@@ -50,17 +50,21 @@
             </form>
         </div>
     </header>
+
+    <!-- JumboTron with Name and Artist -->
     <section class="big-board">
         <div class="jumbotron jumbotron-fluid d-flex ml-10">
             <div class="info">
                 <h1 class="display-4 song-name">Drivers License</h1>
-                <small class ="artist-name">By: Olivia Rodrigo</small>
+                <small class="artist-name">By: Olivia Rodrigo</small>
             </div>
         </div>
     </section>
-    <div class="container lyrics-section">
-        <h3 class="lyric-title">Lyrics</h3>
-        <p class="lyrics">I got my driver's license last week
+
+    <!-- Lyrics Section -->
+    <h3 class="lyric-title d-flex justify-content-center">Lyrics</h3>
+    <div class="d-flex justify-content-sm-center float-md-left lyrics-section">
+        <p class="lyrics mt-3">I got my driver's license last week
             Just like we always talked about
             'Cause you were so excited for me
             To finally drive up to your house
@@ -104,13 +108,37 @@
         </p>
     </div>
 
-        <div class="container music-container">
-            <h3 class="video-title">Video</h3>
-            <iframe class="video" width="420" height="315" src="https://www.youtube.com/embed/ZmDBbnmKpqQ" frameborder="0"></iframe> 
-        </div>
-        <!-- <div class="container ">
-            <h3 class="about-title">Bio</h3>
-        </div> -->
+
+    <!-- Video Section -->
+    <div class="container music-container">
+        <h3 class="video-title">Video</h3>
+        <iframe class="video mt-3" width="420" height="315" src="https://www.youtube.com/embed/ZmDBbnmKpqQ"
+            frameborder="0"></iframe>
+    </div>
+
+    <!-- Top Tracks -->
+    <h3 class="top-hits">Other Top Hits</h3>
+    <div class="container hits-container d-flex float-md-right justify-content-center">
+        <table class="table">
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Song</td>
+                    <td>3:15</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Song</td>
+                    <td>2:39</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Song</td>
+                    <td>2:00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
