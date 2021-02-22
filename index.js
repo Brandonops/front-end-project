@@ -27,7 +27,7 @@ $(document).ready(function () {
                 sec = sec < 10? `0${sec}`: sec
                 let min = Math.floor(trackData.duration/1000/60)
                 let time = trackData.duration == 0? "": `${min}:${sec}`
-                return `<tr>
+                return `<tr >
                 <th scope="row">${index+1}</th>
                 <td>${(currentTrack.name).toUpperCase()}</td>
                 <td>${currentTrack.artist.name}</td>
