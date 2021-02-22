@@ -288,14 +288,20 @@ th {
     font-size: 25px;
 }
 
-.bioContainer {
-    display: flex;
-    justify-content: row;
-    margin: 100px;
+#bioContainer {
+    margin: 25px 50px 25px 50px;
+    width: 70%;
 }
 
 
-#summarybox p {
-    width:70%;
-    line-height: 2em;
+
+#listeners-and-plays {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+#subContent {
+    display: flex;
+
 }
