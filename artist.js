@@ -90,5 +90,6 @@ function renderartistbio(artist) {
       <h2 style="margin-bottom: 25px";>Artist's Summary:</h2>
       <p style="line-height: 2em;">${artist.bio.content}</p>
     `
-
 }
+
+
