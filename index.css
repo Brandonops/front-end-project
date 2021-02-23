@@ -79,7 +79,7 @@ Dropdown Button */
     text-decoration: none;
     display: block;
   }
-@media only screen and (max-width:875px){
+@media only screen and (max-width:995px){
     #navbar2{display:none;}
     .navbar{display:block;}
 }

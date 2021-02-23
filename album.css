@@ -141,8 +141,8 @@ padding: 50px;
   }
 
 
-@media only screen and (max-width:875px){
-    #navbar2{display:none;}
+@media only screen and (max-width:1300px){
+    .navbar2{display:none;}
     .navbar{display:block;}
 }
 
