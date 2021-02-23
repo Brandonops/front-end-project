@@ -293,14 +293,11 @@ th {
     width: 70%;
 }
 
-
-
 #listeners-and-plays {
     display: flex;
     justify-content: space-around;
     width: 30%;
 }
-
 #subContent {
     display: flex;
 
