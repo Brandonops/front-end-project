@@ -25,9 +25,18 @@ $(document).ready(function () {
 
 
 })
-function addToLocal(song,artist,tags,date,img,bio)
+function addArtistToLocal(artist)
 {
-    let track = {song,artist,tags,date,img,bio}
+    let artistData = {artist}
+
+    artistJSON = JSON.stringify(artistData)
+    console.log(artistJSON)
+    localStorage.setItem('artist',artistJSON)
+    window.location.href ="./artist.html"
+}
+function addToLocal(song,artist,tags,date,img)
+{
+    let track = {song,artist,tags,date,img}
 
     trackJSON = JSON.stringify(track)
     console.log(trackJSON)
@@ -47,8 +56,8 @@ function addToLocal(song,artist,tags,date,img,bio)
                 let time = trackData.duration == 0? "": `${min}:${sec}`
                 return `<tr>
                 <th scope="row">${index+1}</th>
-                <td><a href="#" onclick ="addToLocal('${currentTrack.name}', '${currentTrack.artist.name}', '${trackData.tag}', '${trackData.wiki? trackData.wiki.published : "no info"}','${trackData.album? trackData.album.image[2]["#text"]: "./test-image.jpeg"}','${trackData.wiki? trackData.wiki.summary : "No Bio"}' )"> ${(currentTrack.name).toUpperCase()} </a></td>
-                <td> <a href= "#">${currentTrack.artist.name} </a></td>
+                <td><a href="#" onclick ="addToLocal('${currentTrack.name}', '${currentTrack.artist.name}', '${trackData.tag}', '${trackData.wiki? trackData.wiki.published : "no info"}','${trackData.album? trackData.album.image[2]["#text"]: "./test-image.jpeg"}')" > ${(currentTrack.name).toUpperCase()}</a></td>
+                <td> <a href= "#" onclick ="addArtistToLocal('${currentTrack.artist.name}')">${currentTrack.artist.name} </a></td>
                 <td>${trackData.album? trackData.album.title : "No Album"}</td>
                 <td> ${time}</td> 
               </tr>`
@@ -60,15 +69,5 @@ function addToLocal(song,artist,tags,date,img,bio)
 }
 
 
-function renderBio(artistArray) {
-    const $artistBioHtmlArray = artistArray.map(function (currentArtist) {
-        return `
-        <td>${(currentArtist.name).toUpperCase()}</td>
-        <td>${currentArtist.summary}</td>
-        <td>${currentArtist}</td>
-      </tr>`
-  
-    })
-    return $artistBioHtmlArray.join("");
-  };
+
   
