@@ -78,19 +78,28 @@ html, body {
 .music-container {
     float: right;
     width: 50%;
-    margin-top: -3.7%;
+    margin-top: -2.6%;
     text-align: center;
 }
 
-.video-title {
+.album-title {
     text-align: center;
     color: white;
+}
+
+.album-image {
+    width: 50%;
+}
+
+.tag-list {
+    margin-top: -6%;
 }
 
 
 .hits-container {
     width: 50%;
     margin-top: 2%;
+    text-align: center;
 }
 
 .top-hits {
@@ -99,6 +108,20 @@ html, body {
     width: 50%;
     margin-top: 5%;
     color: white;
+}
+
+.release-date-title {
+    text-align: center;
+    float: right;
+    width: 50%;
+    margin-top: 2%;
+    color: white;
+}
+
+.release-container {
+    width: 50%;
+    text-align: center;
+    padding: 0 3% 3% 3%;
 }
 
 .table {
@@ -115,15 +138,11 @@ td, th {
 
 
 @media (max-width:1024px) {
-    .video {
-        margin-left: 50px;
-    }
+    
 }
 
 @media (min-width:768px) and (max-width: 823px) {
-    .video {
-        width: 80%;
-    }
+    
     .table {
         margin-left: 10%;
     }
@@ -153,10 +172,6 @@ td, th {
         margin-top: -216.5%;
     }
 
-    .video {
-        margin-left: 30px;
-        width: 85%;
-    }
 
     .top-hits {
         margin-top: -160%;
@@ -183,11 +198,6 @@ td, th {
 
     .music-container {
         margin-top: -218%;
-    }
-
-    .video {
-        margin-left: 30px;
-        width: 85%;
     }
 
     .top-hits {
@@ -218,11 +228,6 @@ td, th {
         margin-top: -221%;
     }
 
-    .video {
-        margin-left: 30px;
-        width: 85%;
-    }
-
     .top-hits {
         margin-top: -160%;
     }
@@ -249,9 +254,7 @@ td, th {
     .music-container {
         margin-top: -242%;
     }
-    .video {
-        width: 70%;
-    }
+    
 
     .top-hits {
         margin-top: -180%;
@@ -279,9 +282,6 @@ td, th {
     .music-container {
         margin-top: -262.8%;
     }
-    .video {
-        width: 70%;
-    }
 
     .top-hits {
         margin-top: -195%;
@@ -304,9 +304,6 @@ td, th {
 
     .music-container {
         margin-top: -272%;
-    }
-    .video {
-        width: 70%;
     }
 
     .top-hits {
@@ -339,7 +336,7 @@ td, th {
         padding: 0 20px 20px 20px;
     }
 
-    .video-title {
+    .album-title {
         margin-top: 8%;
     }
 
@@ -347,12 +344,6 @@ td, th {
         margin-top: 0;
     }
 
-    .video {
-        width: 75%;
-        height: 75%;
-        margin-left: 30px;
-        margin-top: 0rem!important;
-    }
 }
 
 @media (min-width: 360px) and (max-width: 414px) {
@@ -378,11 +369,6 @@ td, th {
     .music-container {
         float: none;
         width: 100%;
-    }
-
-    .video {
-        margin-left: 50px;
-        width: 75%;
     }
 
     .top-hits {
@@ -420,10 +406,6 @@ td, th {
         width: 100%;
     }
 
-    .video {
-        margin-left: 30px;
-    }
-
     .top-hits {
         float: none;
         width: 100%;
@@ -459,10 +441,6 @@ td, th {
         width: 100%;
     }
 
-    .video {
-        margin-left: 40px;
-        width: 75%;
-    }
 
     .top-hits {
         float: none;
