@@ -41,7 +41,7 @@ function renderChart(chartArray) {
     return `<tr>
 
       <th scope="row">${index + 1}</th>
-      <td>${(currentArtist.name).toUpperCase()}</td>
+      <td><a href="#" onclick="renderArtist('${currentArtist.name}')">${(currentArtist.name).toUpperCase()}</a></td>
       <td>${listenersWCommas}</td>
       <td>${playcountWCommas}</td>
     </tr>`
@@ -58,8 +58,6 @@ $myForm.on("submit", (e) => {
   const searchString = document.querySelector("#search-bar-input").value;
   const urlEncodedSearchString = encodeURIComponent(searchString);
   e.preventDefault();
-  console.log(searchString);
-  console.log(urlEncodedSearchString);
   renderArtist(urlEncodedSearchString);
 
 
@@ -72,18 +70,10 @@ function renderArtist(artist) {
       let $artistContainer = $("#table-chart")
       let $bioContainer = $(".content")
       let $artistBioSummary = data.artist
-      $("#mainArtistJumbo").css("display", "none");
-      console.log($artistBioSummary);
-      const $albumContainer = $("#albumContainer");
+
 
       $artistContainer.html("");
       $bioContainer.html(renderartistbio($artistBioSummary));
-      renderArtistAlbum(artist).then(html => {
-
-        $albumContainer.html(html);
-        console.log(html)
-      })
-      
 
     })
     .catch((error) => {
@@ -93,7 +83,6 @@ function renderArtist(artist) {
 function renderartistbio(artist) {
   return `
         <div class="jumbotron jumbotron-fluid d-flex ml-10">
-          <img src="test-image.jpeg" style=" width: 200px; height: 200px;">
         <div class="container">
           <h1 class="display-4" id="h1-title">${artist.name}</h1>
           <div id="listeners-and-plays">
@@ -108,35 +97,3 @@ function renderartistbio(artist) {
       <p style="line-height: 2em;">${artist.bio.content}</p>
     `
 }
-
-
-function renderArtistAlbum(artist) {
-  return fetch(`http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=${artist}&limit=5&api_key=7781e08c195a7c652f6a3d277ef99b45&format=json`)
-     .then(function (response) { return response.json(); })
-     .then(function (data) {
-
-      let artistTopAlbums = data.topalbums.album
-      return renderAlbum(artistTopAlbums);
-
-    })
-    .catch((error) => {
-      console.log(error);
-    })
-
-}
-
-
-
-async function renderAlbum(albumArray) {
-  const $artistAlbumHtmlArray = albumArray.map((currentAlbum) => {
-
-    let playcountWCommas = addingCommas(`${currentAlbum.playcount}`)
-    console.log(currentAlbum.name);
-    return `<p>${currentAlbum.name}</p>
-      <p>${playcountWCommas}</p>
-      <img src='${currentAlbum.image[1]["#text"]}'>`
-
-  })
-  const $artistAlbumpromises = await Promise.all($artistAlbumHtmlArray)
-  return $artistAlbumpromises.join("");
-};
