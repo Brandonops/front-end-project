@@ -17,7 +17,7 @@ $(document).ready(function () {
     $searchBar.on('submit', function (e) {
 
         e.preventDefault()
-        const $searchBtn = $("#search")
+        const $searchBtn = $("#search")  
         let search = $searchBtn.val()
         search = encodeURIComponent(search)
         $.get(`http://ws.audioscrobbler.com/2.0/?method=track.search&track=${search}&api_key=7781e08c195a7c652f6a3d277ef99b45&format=json`)
@@ -65,6 +65,7 @@ function addToLocal(song,artist,tags,date,img)
                 sec = sec < 10? `0${sec}`: sec
                 let min = Math.floor(trackData.duration/1000/60)
                 let time = trackData.duration == 0? "": `${min}:${sec}`
+                
                 return `<tr>
                 <th scope="row">${index+1}</th>
                 <td><a href="#" onclick ="addToLocal('${currentTrack.name}', '${currentTrack.artist.name}', '${trackData.tag}', '${trackData.wiki? trackData.wiki.published : "no info"}','${trackData.album? trackData.album.image[2]["#text"]: "./test-image.jpeg"}')" > ${(currentTrack.name).toUpperCase()}</a></td>

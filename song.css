@@ -124,6 +124,20 @@ html, body {
     padding: 0 3% 3% 3%;
 }
 
+.bio-title {
+    text-align: center;
+    float: right;
+    width: 50%;
+    margin-top: 2%;
+    color: white;
+}
+
+.bio-container {
+    width: 50%;
+    text-align: center;
+    padding: 0 3% 3% 3%;
+}
+
 .table {
     width: 80%;
     border-style: none;
