@@ -47,7 +47,7 @@ function addToLocal(song,artist,tags,date,img,bio)
                 let time = trackData.duration == 0? "": `${min}:${sec}`
                 return `<tr>
                 <th scope="row">${index+1}</th>
-                <td><a href="#" onclick ="addToLocal('${currentTrack.name}', '${currentTrack.artist.name}', '${trackData.tag}', '${trackData.wiki? trackData.wiki.published : "no info"}','${trackData.album? trackData.album.image[2]["#text"]: "./test-image.jpeg"}','${trackData.wiki? trackData.wiki.summary : "No Bio"}' )"> ${(currentTrack.name).toUpperCase()} </a></td>
+                <td><a href="#" onclick ="addToLocal('${currentTrack.name}', '${currentTrack.artist.name}', '${trackData.tag}', '${trackData.wiki? trackData.wiki.published : "no info"}','${trackData.album? trackData.album.image[2]["#text"]: "./test-image.jpeg"}')"> ${(currentTrack.name).toUpperCase()} </a></td>
                 <td> <a href= "#">${currentTrack.artist.name} </a></td>
                 <td>${trackData.album? trackData.album.title : "No Album"}</td>
                 <td> ${time}</td> 

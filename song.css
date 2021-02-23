@@ -110,7 +110,7 @@ html, body {
     color: white;
 }
 
-.artist-bio-title {
+.release-date-title {
     text-align: center;
     float: right;
     width: 50%;
@@ -118,7 +118,7 @@ html, body {
     color: white;
 }
 
-.bio-container {
+.release-container {
     width: 50%;
     text-align: center;
     padding: 0 3% 3% 3%;
