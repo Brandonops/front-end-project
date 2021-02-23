@@ -1,7 +1,19 @@
 $(document).ready(function () {
   const $artistContainer = $("#tbody")
 
-  fetch('http://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&api_key=7781e08c195a7c652f6a3d277ef99b45&format=json')
+  let track =""
+  let trackJSON =" "
+  
+
+  if (localStorage.getItem("artist") != null)
+  {  
+      trackJSON = localStorage.getItem("artist")
+      track = JSON.parse(trackJSON)
+      renderArtist(track.artist)
+      localStorage.clear()
+  }
+  else{
+    fetch('http://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&api_key=7781e08c195a7c652f6a3d277ef99b45&format=json')
     .then(function (response) { return response.json(); })
     .then(function (data) {
 
@@ -14,8 +26,7 @@ $(document).ready(function () {
     .catch((error) => {
       console.log(error);
     })
-
-
+  }
 })
 
 function addingCommas(x) {

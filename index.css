@@ -52,7 +52,6 @@ font-size: 25px;;
     margin: 1px;
 }
 
-Dropdown Button */
 .dropbtn {
     background-color: #1F2833;
     color:#66fcf1;
@@ -79,7 +78,7 @@ Dropdown Button */
     text-decoration: none;
     display: block;
   }
-@media only screen and (max-width:875px){
+@media only screen and (max-width:1199px){
     #navbar2{display:none;}
     .navbar{display:block;}
 }
@@ -252,6 +251,7 @@ body {
 	margin: 15px 15px 15px 15px;
 	background-color: transparent;
 	overflow-y: auto;
+    color: #66fcf1;
 }
 
 .jumbotron {

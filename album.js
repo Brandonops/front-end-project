@@ -16,20 +16,20 @@ function renderAlbum(albumArray) {
         </div>
         </div>
         </a>`
-        
+
     })
     return albumHTMLArray.join('')
 }
 $(document).ready(function () {
     albumContainer = document.querySelector(".cardRow")
     const $searchResult = $(".search-bar")
-    $searchResult.on("submit",(e) => {
+    $searchResult.on("submit", (e) => {
         const searchAlbum = document.querySelector(".search").value
         const uricode = encodeURI(searchAlbum)
         e.preventDefault()
         console.log(searchAlbum)
         fetch(`http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=${uricode}&api_key=7781e08c195a7c652f6a3d277ef99b45&format=json`)
-            .then((response) =>{
+            .then((response) => {
                 return response.json()
             })
             .then(data => {
