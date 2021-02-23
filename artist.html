@@ -28,8 +28,10 @@
           </button>
           <div class="dropdown-content collapse" id="navbarToggler">
             <a href="index.html">Top Tracks</a>
+
             <a href="album.html">Album</a>
             <a href="artist.html">Artist</a>
+
 
           </div>
         </div>
@@ -45,8 +47,8 @@
     <div class="title col-4 d-flex justify-content-center "> Alpha Music
     </div>
     <div class="col-4  d-flex justify-content-end background-color:">
-      <form action="" class="search-bar">
-        <input type="search" name="search" pattern=".*\S.*" required>
+      <form action="" class="search-bar" id="search-form">
+        <input type="search" name="search" id="search-bar-input" pattern=".*\S.*" required>
         <button class="search-btn" type="submit">
           <span>Search</span>
         </button>
@@ -54,20 +56,37 @@
     </div>
   </header>
   <br>
-  <div class="content">
-    <div class="jumbotron jumbotron-fluid d-flex ml-10">
+  <div class="content" id="mainContent">
+    <div class="jumbotron jumbotron-fluid d-flex ml-10" id="mainArtistJumbo">
       <img src="test-image.jpeg" style=" width: 200px; height: 200px;">
       <div class="container">
-        <h1 class="display-4">Cher</h1>
-        <p class="lead">Listeners</br>1.2M</p>
+        <h1 class="display-4" id="h1-title">Top 50 Artists</h1>
+        <div id="listeners-and-plays">
+          <p class="lead" id="listeners"></br></p>
+          <p class="lead" id="playcount"></br></p>
+        </div>
       </div>
     </div>
-    <div class="bioContainer">
-      <p>YOOOOOOOOOOOOOOOOOOOOOO</p>
+    <div id="table-chart">
+      <table class="table">
+        <thead id="labelRow">
+          <tr id="labelRow">
+            <th scope="col">#</th>
+            <th scope="col">Artist</th>
+            <th scope="col">Listeners</th>
+            <th scope="col">Playcount</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+      </table>
     </div>
-
-
-
+    <div id="subContent">
+      <div id="bioContainer">
+      </div>
+      
+    </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -76,6 +95,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
     crossorigin="anonymous"></script>
+  <script src="artist.js"></script>
 </body>
 
 </html>
