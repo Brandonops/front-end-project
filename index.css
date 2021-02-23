@@ -245,9 +245,6 @@ body {
 	background-repeat: no-repeat;
 }
 
-li {
-    padding: 20px 50px 20px 50px;
-}
 
 /* content */
 .content {
@@ -289,6 +286,7 @@ th {
     font-size: 25px;
 }
 
+
 #bioContainer {
     margin: 25px 50px 25px 50px;
     width: 70%;
@@ -298,11 +296,48 @@ th {
 
 #listeners-and-plays {
     display: flex;
-    justify-content: space-around;
-    width: 30%;
+    justify-content: space-evenly;
+    width: 40%;
 }
 
 #subContent {
     display: flex;
 
+}
+
+@media only screen and (max-width: 830px) {
+    #listeners-and-plays {
+        font-size: 20px;
+        display: block;
+        width: 40%;
+    }
+    
+}
+
+@media only screen and (max-width: 530px) {
+    th {
+        font-size: 15px;
+    }   
+    #tbody {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    th {
+        font-size: 10px;
+    } 
+    #tbody {
+        font-size: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 465px) {
+    th {
+        font-size: 10px;
+    }   
+    #tbody {
+        font-size: 10px;;
+    }
 }
