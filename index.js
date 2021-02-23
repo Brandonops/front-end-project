@@ -58,3 +58,17 @@ function addToLocal(song,artist,tags,date,img,bio)
    const chartHtmlArray = await Promise.all(chartPromise)
     return chartHtmlArray.join("")
 }
+
+
+function renderBio(artistArray) {
+    const $artistBioHtmlArray = artistArray.map(function (currentArtist) {
+        return `
+        <td>${(currentArtist.name).toUpperCase()}</td>
+        <td>${currentArtist.summary}</td>
+        <td>${currentArtist}</td>
+      </tr>`
+  
+    })
+    return $artistBioHtmlArray.join("");
+  };
+  
