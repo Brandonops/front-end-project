@@ -65,10 +65,13 @@ function renderArtist(artist) {
       console.log($artistBioSummary);
       const $albumContainer = $("#albumContainer");
 
-      console.log(renderArtistAlbum(artist));
       $artistContainer.html("");
       $bioContainer.html(renderartistbio($artistBioSummary));
-      $albumContainer.html(renderArtistAlbum(artist));
+      renderArtistAlbum(artist).then(html => {
+
+        $albumContainer.html(html);
+        console.log(html)
+      })
       
 
     })
@@ -102,11 +105,7 @@ function renderArtistAlbum(artist) {
      .then(function (data) {
 
       let artistTopAlbums = data.topalbums.album
-
-      console.log(artistTopAlbums);
-
-      console.log(renderAlbum(artistTopAlbums));
-       (renderAlbum(artistTopAlbums));
+      return renderAlbum(artistTopAlbums);
 
     })
     .catch((error) => {
