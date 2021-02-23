@@ -285,3 +285,22 @@ td, th {
 th {
     font-size: 25px;
 }
+
+
+#bioContainer {
+    margin: 25px 50px 25px 50px;
+    width: 70%;
+}
+
+
+
+#listeners-and-plays {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+}
+
+#subContent {
+    display: flex;
+
+}

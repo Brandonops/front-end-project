@@ -51,27 +51,30 @@ $myForm.on("submit", (e) => {
   console.log(urlEncodedSearchString);
   renderArtist(urlEncodedSearchString);
 
-  
+
 });
 function renderArtist(artist) {
-fetch(`http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${artist}&api_key=http://ws.audioscrobbler.com/2.0/?method=artist.search&artist=${artist}&api_key=7781e08c195a7c652f6a3d277ef99b45&format=json&format=json`)
-  .then(function (response) { return response.json(); })
-  .then(function (data) {
+  fetch(`http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${artist}&api_key=http://ws.audioscrobbler.com/2.0/?method=artist.search&artist=${artist}&api_key=7781e08c195a7c652f6a3d277ef99b45&format=json&format=json`)
+    .then(function (response) { return response.json(); })
+    .then(function (data) {
 
-    let $artistContainer = $("#table-chart")
-    let $bioContainer = $(".content")
-    let $artistBioSummary = data.artist
-    $("#mainArtistJumbo").css("display","none");
-    console.log($artistBioSummary);
+      let $artistContainer = $("#table-chart")
+      let $bioContainer = $(".content")
+      let $artistBioSummary = data.artist
+      $("#mainArtistJumbo").css("display", "none");
+      console.log($artistBioSummary);
+      const $albumContainer = $("#albumContainer");
 
-    $artistContainer.html("");
-    $bioContainer.html(renderartistbio($artistBioSummary));
+      console.log(renderArtistAlbum(artist));
+      $artistContainer.html("");
+      $bioContainer.html(renderartistbio($artistBioSummary));
+      $albumContainer.html(renderArtistAlbum(artist));
+      
 
-
-  })
-  .catch((error) => {
-    console.log(error);
-  })
+    })
+    .catch((error) => {
+      console.log(error);
+    })
 }
 function renderartistbio(artist) {
   return `
@@ -93,3 +96,37 @@ function renderartistbio(artist) {
 }
 
 
+function renderArtistAlbum(artist) {
+  return fetch(`http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=${artist}&limit=5&api_key=7781e08c195a7c652f6a3d277ef99b45&format=json`)
+     .then(function (response) { return response.json(); })
+     .then(function (data) {
+
+      let artistTopAlbums = data.topalbums.album
+
+      console.log(artistTopAlbums);
+
+      console.log(renderAlbum(artistTopAlbums));
+       (renderAlbum(artistTopAlbums));
+
+    })
+    .catch((error) => {
+      console.log(error);
+    })
+
+}
+
+
+
+async function renderAlbum(albumArray) {
+  const $artistAlbumHtmlArray = albumArray.map((currentAlbum) => {
+
+    let playcountWCommas = addingCommas(`${currentAlbum.playcount}`)
+    console.log(currentAlbum.name);
+    return `<p>${currentAlbum.name}</p>
+      <p>${playcountWCommas}</p>
+      <img src='${currentAlbum.image[1]["#text"]}'>`
+
+  })
+  const $artistAlbumpromises = await Promise.all($artistAlbumHtmlArray)
+  return $artistAlbumpromises.join("");
+};
