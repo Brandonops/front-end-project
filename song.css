@@ -70,8 +70,7 @@ html, body {
 }
 
 .lyrics-section {
-    width: 40%;
-    margin-left: 60px;
+    width: 50%;
     text-align: center;
 }
 
@@ -82,9 +81,10 @@ html, body {
     text-align: center;
 }
 
-.album-title {
+.album-image-title {
     text-align: center;
     color: white;
+    margin-top: -1%;
 }
 
 .album-image {
@@ -114,7 +114,7 @@ html, body {
     text-align: center;
     float: right;
     width: 50%;
-    margin-top: 2%;
+    margin-top: 5%;
     color: white;
 }
 
@@ -149,11 +149,28 @@ td, th {
     border-style: hidden!important;
 }
 
-
-
-@media (max-width:1024px) {
-    
+@media (min-width: 1339px) and (max-width: 1440px) {
+    .album-image-title {
+        margin-top: -2.5%;
+    }
 }
+
+@media (min-width: 1365px) and (max-width: 1367px) {
+    .album-image-title {
+        margin-top: -3%;
+    }
+}
+
+@media (min-width:1020px) and (max-width: 1024px) {
+    .lyrics {
+        width: 90%;
+    }
+
+    .album-image-title {
+        margin-top: -4%;
+    }
+}
+
 
 @media (min-width:768px) and (max-width: 823px) {
     
@@ -164,8 +181,8 @@ td, th {
         bottom: 70px;
     }
 
-    .lyrics-section {
-        margin-left: 40px;
+    .lyrics {
+        width: 90%;
     }
 
     .music-container {
@@ -178,12 +195,26 @@ td, th {
         bottom: 80px;
     }
     
-    .lyrics-section {
-        margin-left: 30px;
+    .lyrics {
+        width: 90%;
     }
 
     .music-container {
         margin-top: -216.5%;
+    }
+
+    .album-image-title {
+        margin-top: -520%;
+    }
+
+    .release-date-title {
+        margin-top: -425%;
+    }
+
+    .release-container {
+        float: right;
+        padding: 0 0 0 0;
+        margin-top: -418%;
     }
 
 
@@ -206,12 +237,26 @@ td, th {
         bottom: 80px;
     }
     
-    .lyrics-section {
-        margin-left: 30px;
+    .lyrics {
+        width: 90%;
     }
 
     .music-container {
         margin-top: -218%;
+    }
+
+    .album-image-title {
+        margin-top: -523%;
+    }
+
+    .release-date-title {
+        margin-top: -425%;
+    }
+
+    .release-container {
+        padding: 0 0 0 0;
+        float: right;
+        margin-top: -419%;
     }
 
     .top-hits {
@@ -234,8 +279,22 @@ td, th {
         bottom: 80px;
     }
     
-    .lyrics-section {
-        margin-left: 30px;
+    .lyrics {
+        width: 90%;
+    }
+
+    .album-image-title {
+        margin-top: -532%;
+    }
+
+    .release-date-title {
+        margin-top: -435%;
+    }
+
+    .release-container {
+        padding: 0 0 0 0;
+        float: right;
+        margin-top: -428%;
     }
 
     .music-container {
@@ -262,11 +321,29 @@ td, th {
     }
     
     .lyric-title {
-        width: 60%;
+        width: 50%;
+    }
+
+    .lyrics {
+        width: 90%;
     }
 
     .music-container {
         margin-top: -242%;
+    }
+
+    .album-image-title {
+        margin-top: -565%;
+    }
+
+    .release-date-title {
+        margin-top: -465%;
+    }
+
+    .release-container {
+        padding: 0 0 0 0;
+        float: right;
+        margin-top: -457%;
     }
     
 
@@ -290,7 +367,25 @@ td, th {
     }
     
     .lyric-title {
-        width: 60%;
+        width: 50%;
+    }
+
+    .lyrics {
+        width: 90%;
+    }
+
+    .album-image-title {
+        margin-top: -553%;
+    }
+
+    .release-date-title {
+        margin-top: -480%;
+    }
+
+    .release-container {
+        padding: 0 0 0 0;
+        float: right;
+        margin-top: -473%;
     }
 
     .music-container {
@@ -313,7 +408,28 @@ td, th {
     }
     
     .lyric-title {
-        width: 60%;
+        width: 50%;
+    }
+
+    .lyrics {
+        width: 90%;
+    }
+
+    .album-image-title {
+        margin-top: -557%;
+    }
+
+    .release-date-title {
+        margin-top: -490%;
+    }
+
+    .release-date {
+        float: right;
+    }
+
+    .release-container {
+        float:right;
+        margin-top: -483%;
     }
 
     .music-container {
@@ -334,7 +450,7 @@ td, th {
     }
 }
 
-@media (min-width: 540px) and (max-width: 568px) {
+@media (min-width: 540px) and (max-width: 638px) {
     .info {
         bottom: 60px;
     }
@@ -347,11 +463,20 @@ td, th {
         float: none;
         width: 100%;
         margin-left: 0px;
-        padding: 0 20px 20px 20px;
+        padding: 0 20px 40px 20px;
     }
+    
 
     .album-title {
         margin-top: 8%;
+    }
+
+    #album-image {
+        padding-bottom: 10%;
+    }
+
+    .release-date-title {
+        margin-top: -3%;
     }
 
     .top-hits {
@@ -360,7 +485,7 @@ td, th {
 
 }
 
-@media (min-width: 360px) and (max-width: 414px) {
+@media (min-width: 360px) and (max-width: 539px) {
     .info {
         bottom: 35px;
     }
@@ -378,6 +503,12 @@ td, th {
         width: 100%;
         text-align: center;
         margin-left: 0px;
+    }
+
+    .release-date-title {
+        float: none;
+        width: 100%;
+        margin-top: 10%;
     }
 
     .music-container {
@@ -420,6 +551,12 @@ td, th {
         width: 100%;
     }
 
+    .release-date-title {
+        float: none;
+        width: 100%;
+        margin-top: 10%;
+    }
+
     .top-hits {
         float: none;
         width: 100%;
@@ -453,6 +590,12 @@ td, th {
     .music-container {
         float: none;
         width: 100%;
+    }
+
+    .release-date-title {
+        float: none;
+        width: 100%;
+        margin-top: 10%;
     }
 
 
